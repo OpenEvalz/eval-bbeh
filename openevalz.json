@@ -1,0 +1,49 @@
+{
+  "openevalz_version": 1,
+  "eval": {
+    "id": "bbeh",
+    "slug": "bbeh",
+    "title": "BIG-Bench Extra Hard",
+    "group": "Reasoning",
+    "tags": [],
+    "source": "core"
+  },
+  "upstream": {
+    "repo": "https://github.com/UKGovernmentBEIS/inspect_evals",
+    "path": "src/inspect_evals/bbeh",
+    "inspect_ai": "0.3.260",
+    "eval_version": "2-A",
+    "dependency": ""
+  },
+  "execution": {
+    "class": "plain",
+    "cost_class": "medium",
+    "sandbox": null,
+    "requires_internet": false,
+    "fast": false,
+    "supports_k8s": false,
+    "environment": ""
+  },
+  "tasks": [
+    {
+      "name": "bbeh",
+      "samples": 4520
+    },
+    {
+      "name": "bbeh_mini",
+      "samples": 460
+    }
+  ],
+  "total_samples": 4980,
+  "external_assets": [
+    {
+      "type": "huggingface",
+      "source": "BBEH/bbeh",
+      "state": "pinned"
+    }
+  ],
+  "scaffolds": [
+    "baseline"
+  ],
+  "generated": "2026-08-25"
+}
